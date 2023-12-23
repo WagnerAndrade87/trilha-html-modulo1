@@ -7,56 +7,188 @@
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
 </head>
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+      <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
+      <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+      <h2>Índice</h2>
+      <ul>
+         <li><a href="#historia">História dos computadores</a></li>
+         <li><a href="#client">O que são <i>Clients</i>?</a></li>
+         <li><a href="#server">O que são <i>Servers</i>?</a></li>
+         <li><a href="#baseHTML">Como é uma estrutura básica de um HTML?</a></li>
+         <li><a href="#tag">Tags font / del e abbr</a></li>
+         <li><a href="#links">Links de referências</a></li>
+       </ul>
+
+      <h2 id="historia">História dos computadores</h2>
+      <p>No <strong>Módulo 1 - Primeiros Passos com <abbr title ="Hyper Text Markup Language">HTML</abbr></strong> estudamos
+         uma breve história dos computadores com as principais caracteristicas de cada geração. De acordo com o apresentado
+          a história se divide em 5 gerações e possuem as seguintes caracteristicas.<br>
+         <ol>
+            <li><u> Primeira Geração - (1951-1959) </u><br>
+               Os computadores desta época funcionavam por meio de circuitos e válvulas eletrônicas. Seu uso era restrito uma 
+               vez que eram muito grandes e possuíam auto consumo de energia. Exemplos desta geração são: MARK I, e ENIACC.
+               <blockquote>Foi nesta geração que também surgiu o termo <mark>Bug</mark> que em tradução livre quer dizer inseto.
+                  Este termo era utilizado quando algum inseto encostava-se aos circuitos elétricos e causando algum problema
+                  durante o processamento dos dados.
+               </blockquote>
+            </li>
+         
+            <li><u>Segudna Geração (1959-1965) </u><br>
+               Ainda possuíam grandes dimensões, entretanto começou a usar os transistores, em substituição das válvulas que
+               eram maiores e mais lentas. Neste período começaram a se popularizar seu uso comercial.
+            </li><br>
+
+            <li><u>Terceira Geração (1965-1970)</u><br>
+               Nesta geração os transistores foram trocados pelos circuitos integrados, o que permitiu a fabricação de 
+               computadores menores dimensões.<br>
+               Aqui começou a utilização dos chips e a popularização dos computadores pessoais.
+            </li><br>
+
+            <li><u>Quarta Geração (1971-dias atuais)</u><br>
+               Com a evolução da tecnologia, os computadores diminuíram de tamanho e aumentaram a velocidade de 
+               processamento e armazenamento de Dados. Inclusão dos microprocessadores reduzindo o gasto de energia.<br>
+               No inicio do milênio com o surgimento dos softwares integrados surgiu os computadores de mãos, ou seja
+               os smartphones, tablets, que incluem a conexão móvel com navegação web.
+            </li>
+         </ol>
+         <small><a href="#inicio"> voltar</a></small>
+      </p>
+
+      <h2 id="client">O que são <i>Clients</i>?</h2>
+      <h3> <u>Client no liguagem web</u></h3>
+      <p> Na Web client é o dispositivo que esta consumindo informação.<br>
+         O client solicita através do endereço de pagina ao servidor os arquivos 
+         <abbr title ="Hyper Text Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>,
+            javascript e imagens. Estes arquivos serão enciados pelo servidor, e ao chegar ao client sera executado pelo
+            navegador. Algumas destas informações são armazenadas em cache, evitando o carregamento total da pagina toda
+            vez que o usuário a solicitar.
+      </p>
+      
+      <h3><u> Falando Sobre Navegadores </u></h3>
+      <p>O navegador é instalado do lado cliente, usado para interpretar os arquivos recebidos pelo servidor Web. <br>
+         Hoje existem diversos navegadores, como exemplo podemos citar <a href="https://www.mozilla.org/pt-BR/?v=3" target="_blank">Mozilla</a>,
+         <a href="https://www.google.com/intl/pt-BR/chrome/" target="_blank">Chrome</a>, <del>Internet Explorer</del> Microsoft Edge entre outros.
+      </p>
+
+      <h3><u>Aplicações Web</u></h3>
+      <p>Aplicações web, são soluções criadas e que possuem a internet como meio de comunicação <b>client x server</b>, 
+         que usa somente o navegador, sem a necessidade de instalar algum aplicativo.<br>
+         <small><a href="#inicio"> voltar</a></small>         
+      </p>
+
+    <h2 id="server">O que são <i>Servers</i>?</h2>
+    <h3><u>Sobre servidores</u></h3>
+    <p> Servidrores são equipamentos que fornecem algum tipo de serviço, pode ser ele servidor de e-mail, arquivos/dados, web.<br>
+      Estes equipamento devem possuir melhores recursos fisicos como memoria ram, disco de armazenamento e processadores, além
+      destes recursos deve conter alguns softwares especiais, como Sistema operacional para servidores e alguns serviços como por
+      exmplo para servidreos web estes devem conter Apache, Nginx.<br>
+      Atualmente existem empresas que disponibilizam a contratação de servidores para o armazenadas de suas aplicações e dados, 
+      sendo este tipo de serviço interessante uma vez que como ja citado antes os equipamentos para servidor terem que ser 
+      maquinas exclusivas para este fim, alem de terem que ser bem dimensionadas para o serviços, uma vez que são equipaentos 
+      mais caros. Com a contratação de data center, para se realizar upload de seus recursos e softwares é mais rapído do que
+      realizar o upload em sua sede.<br>
+      <small><a href="#inicio"> voltar</a></small>    
+    </p>
+    
+
+    <h2 id="baseHTML">Como é uma estrutura básica de um <abbr title ="Hyper Text Markup Language">HTML</abbr></h2>
+    <p> Inicialmente devemos lembrar que o <abbr title ="Hyper Text Markup Language">HTML</abbr> não é uma linguagem
+      de programação, e sim uma linguagem de marcação, ou seja um arquivo de texto que possui delimitadores que são
+      interpretados pelos navegadores.
+    </p>
+    <h3><u>Estrutura Báisca</u></h3>
+    <p> O <abbr title ="Hyper Text Markup Language">HTML</abbr> possui sua estrutura basica conforme demosntrada na imagem abaixo<br>
+       <img src="https://miro.medium.com/v2/resize:fit:1000/0*6CkY2U51n8WaHUGt.gif"><br><sub>
+       <small> Estrutura básica HTML.</small></sub><br>
+       <small><a href="#inicio"> voltar</a></small>    
+    </p>    
+
+   <!-- <h3><u>Tags aprendidas até agora</u></h3> 
+    <h4>Tag H</h4>
+    <p>A utilização da tag <strong>h</strong> é voltada para titulos, e podem ir de H1 a H6 sendo que de acordo que se aumenta o numero
+      diminui o tamanho da fonte.<br>
+      <table border=0.5>
+         <tr>
+            <td><h1>&lth1&gt</h1></td><td></td>
+            <td><h2>&lth2&gt</h2></td><td></td>
+            <td><h3>&lth3&gt</h3></td><td></td>
+            <td><h4>&lth4&gt</h4></td><td></td>
+            <td><h5>&lth5&gt</h5></td><td></td>
+            <td><h6>&lth6&gt</h6></td>
+         </tr>
+      </table>
+    </p>-->
+
+   <!-- <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
+       Não esqueça de colocar links para outros sites e também de formatar o texto com 
+       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
+    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>-->
+
+    <h2 id="tag"> Tags font / del e abbr</h2>
+    <p>Neste projeto nos foi sugigerida a utilização das tags &ltfont&gt, &ltdel&gt e &ltabbr&gt</p>
+    <p>A tag &ltabbr&gt é utilizada para realizar marcação de abreviatura ou acronimo como HTML, CSS.<br>
+      Usando o atributo <font color="red"><i>title</i></font> é possivel adicionar uma descrição a abreviação/acrônimo
+      que ira aparecer ao passar o mouse sobre o elemento. Esta tag suporta os atributos Globais do HTML
+      <table border="1">
+         <tr>
+            <td><center> Codigo </center></td>
+            <td><center> Resultado</center></td>
+         </tr>
+         <tr>
+            <td>&lt<font color="blue">abbr</font> <font color="red">title=</font>"Digital Innovation One""&gt DIO
+             /acronimo &lt<font color="blue">/abbr</font>&gt</td>
+            <td>
+               <abbr title="Digital Innovation One"><center>DIO</center></abbr></td>
+         </tr>
+      </table>
+    </p>
+
+    <p>A tag &ltdel&gt represeta uma parte de texto excluido em um documento. Quando renderizado pelos navegadores usualmente
+      coloca uma linha cortando o texto. Esta tag suporta os atributos Globais do HTML.
+         <table border="1">
+          <tr>
+               <td><center> Codigo </center></td>
+               <td><center> Resultado</center></td>
+         </tr>
+          <tr>
+               <td>&lt<font color="blue">del</font>&gt texto a ser apagado &lt<font color="blue">/del</font>&gt</td>
+               <td><del>texto a ser apagado </del></td>
+            </tr>
+         </table>
+    </p>
+
+    <P> A tag &lt<font color="blue">font</font>&gt, define tamanho cor e tipo de fonte a ser utilizada. Entretanto essa tag
+      foi descontinuada no HTML5, sendo recomendado a utilização das propriedades de fonte do CSS.<br>
+
+      
+      <table border="1">
+         <tr>
+              <td><center> Codigo </center></td>
+              <td><center> Resultado</center></td>
+        </tr>
+         <tr>
+              <td>&lt<font color="blue">font</font> <font color="red">size=</font>"5"</font> <font color="red">color=</font>
+               "green" <font color="red">face=</font>"arial"&gt Fonte &lt/font&gt</td>
+              <td><font size="5" color="green" face="arial">Fonte</font></td>
+           </tr>
+        </table>
+        <small><a href="#inicio"> voltar</a></small>
+    </P>
+    <h2 id="links">Links de referências</h2>
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
-
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
+        <li><a href="http://dio.me" target="_blank"><aabr title ="Digital Innovation One">DIO</abbr></a></li>
+        <li><a href="http://w3c.org" target="_blank">W3Schools</a></li>
+        <li><a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/" target="_blank">Toda Materia</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDM Web Docs</a></li>
+        <li><a href="http://www.ideapedia.com.br/SiteRefTec/html/41-Alinhamento%20de%20texto%20na%20p%C3%A1gina.html">
+            HTML - ALinnhamento de texto na página HTML
+        </a></li>
+      </ul>
+    <small><a href="#inicio"> voltar</a></small>
 
 </body>
 </html>
+
+
